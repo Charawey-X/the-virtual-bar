@@ -31,7 +31,7 @@ main {
 }
 
 .bars:hover {
-    scale: 1.2;
+    scale: 1.1;
 }
 
 .bottom-side {
@@ -45,8 +45,8 @@ main {
 }
 
 .link:hover {
-    background: #000000;
-    color: white;
+    background: #FFF3BF;
+    color: #000000;
     transition: all 0.3s ease-in-out;
 }
 
