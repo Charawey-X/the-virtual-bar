@@ -9,21 +9,21 @@ main {
 }
 
 .sidebar {
-    background-color: #FFFFFF;
+    background-color: #99A1A4;
     height: 100vh;
 }
 
 .top-side {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 
 
 #logo {
-    width: 10em;
-    height: 10em;
+    width: 6em;
+    height: 6em;
 }
 
 .bars {
@@ -45,7 +45,7 @@ main {
 }
 
 .link:hover {
-    background: #FFF3BF;
+    background: #FFCBDB;
     color: #000000;
     transition: all 0.3s ease-in-out;
 }
@@ -72,4 +72,10 @@ main {
 .active {
     background: #000000;
     color: white;
+}
+
+.side-bottom {
+    background: url(../../assets/sidebottom.jpg);
+    background-size: cover;
+    height: 50%;
 }

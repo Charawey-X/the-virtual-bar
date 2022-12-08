@@ -1,0 +1,45 @@
+@font-face {
+  font-family: cheri;
+  src: url(../../assets/fonts/CHERI___.TTF);
+}
+
+h1 {
+    font-size: 5em;
+    padding-top: 0em;
+    text-align: center;
+    font-family: cheri;
+    word-spacing: 0.5em;
+    /* color: #9FA6A6; */
+    background: url(../../assets/hometitle1.jpg);
+    background-size: contain;
+    background-position: center;
+    /* background: linear-gradient(to right, #BB0000 0%, #435F00 50%, #1B5C8B 100%); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*text-shadow: #FC0 1px 0 1px;*/
+}
+
+.home {
+    display: flex;
+}
+
+.home-content {
+    width: 40%;
+    color: #D6845E;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+}
+
+.home-back {
+ display: flex;
+ width: 70%;
+}
+
+.home-back img {
+    width: 100%;
+}
+
+.search {
+    height: 20px;
+}

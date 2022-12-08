@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import Likes from "./pages/Likes";
 import Profile from "./pages/Profile";
 import Saved from "./pages/Saved";

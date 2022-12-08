@@ -5,7 +5,7 @@ import {faIgloo, faHeart, faUser, faBars} from "@fortawesome/free-solid-svg-icon
 import { Icon as MaterialIcon } from "@mdi/react";
 import { mdiFolderMultiplePlus } from "@mdi/js"; 
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/logo1.png";
+import logo from "../../assets/logo3.png";
 
 
 const Sidebar = ({children}) => {
@@ -63,6 +63,7 @@ const Sidebar = ({children}) => {
                         )) 
                     }
                 </div>
+                <div className="side-bottom"></div>
             </div>
             <main>{children}</main> 
         </div>
