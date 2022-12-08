@@ -29,6 +29,7 @@ h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.5em;
+    padding-top: 2em;
 }
 
 .home-back {
@@ -42,4 +43,9 @@ h1 {
 
 .search {
     height: 20px;
+}
+
+.sentence {
+    padding: 5px;
+    text-align: center;
 }
