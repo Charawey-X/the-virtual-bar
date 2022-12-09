@@ -1,35 +1,72 @@
 import React from "react";
 import "./Home.css";
 import home from "../../assets/home.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faAnglesDown} from "@fortawesome/free-solid-svg-icons";
+import Typed from "react-typed";
 
+const Home = () => {
 
-class Home extends React.Component {
-  render() {
+  const [seconds, setSeconds] = React.useState(0);
 
-    const content = "Need a cocktail recipe?\nSearch for a drink by name, or ingredient,\nand we'll show you what you need to make it.\nYou can make signature cocktails right from your home,\n and save your favorites for later.";
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds(seconds => seconds + 1);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
 
-    return (
-      <div>
-         <h1>THE VIRTUAL BARTENDER</h1>
-        <div className="home">
-          <div className="home-content">
-            {
-              content.split("\n").map((item, key) => (
-                <div key={key}>
-                  <div className="sentence">{item}</div>
+  return (
+    <div>
+        <h1>THE VIRTUAL BARTENDER</h1>
+      <div className="home">
+        <div className="home-content">
+          {
+              <div>
+                <div className="sentence">
+                  <Typed
+                    strings={[
+                      "Need a cocktail recipe?"
+                    ]}
+                    typeSpeed={50}
+                    onComplete={(self) => self.cursor.remove()} 
+                  /><br/>
+                  <Typed
+                    strings={[
+                      "Search for a drink by name, or ingredient,"
+                    ]}
+                    typeSpeed={50}
+                    startDelay={2000} 
+                    onComplete={(self) => self.cursor.remove()}
+                  /><br/>
+                  <Typed
+                    strings={[
+                      "or just browse through our selection of signature cocktails",
+                    ]}
+                    typeSpeed={50}
+                    startDelay={5000} 
+                    onComplete={(self) => self.cursor.remove()}
+                  /><br/>
+                  <Typed
+                    strings={[
+                      "and we'll show you how to make it!",
+                    ]}
+                    typeSpeed={50} 
+                    startDelay={9000} 
+                  /><br/>
                 </div>
-              ))
-            }
-            <div className="search">
-            </div>
-          </div>
-          <div className="home-back">
-            <img src= {home} alt = "" />
+              </div>
+          }
+          <div className="search">
+            <button className="search-button"><FontAwesomeIcon icon={faAnglesDown} size="2x" style={{ marginTop: seconds % 2 === 0 ? "0em" : "0.3em", transition: "ease-in-out", transitionProperty:"paddingTop" }} /></button>
           </div>
         </div>
+        <div className="home-back">
+          <img src= {home} alt = "" />
+        </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default Home;

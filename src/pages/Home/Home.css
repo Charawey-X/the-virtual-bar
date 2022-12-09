@@ -41,11 +41,39 @@ h1 {
     width: 100%;
 }
 
-.search {
-    height: 20px;
-}
-
 .sentence {
     padding: 5px;
     text-align: center;
+    font-family: 'Cutive Mono', monospace;
+    font-weight: 400;
+    font-size: 1em;
+    color: #77AC00;
+}
+
+.search {
+    display:flex;
+    padding-top: 2em;
+    justify-content: center;
+}
+
+.search-button {
+    display: flex;
+    border: transparent;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 1.3em;
+    background-color: #000000;
+    color: #fff;
+}
+
+.search-button:hover {
+    color: #D13B00;
+    cursor: pointer;
+}
+
+.search-button img {
+    width: 50px;
+    height: 50px;
+    padding: 0 0 0 0.5em;
 }
